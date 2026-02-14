@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Chat pastel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="chat-container">
+  <div class="chat-header">Chat en tiempo real</div>
+
+  <ul id="messages"></ul>
+
+  <div class="chat-input">
+    <input id="input" placeholder="Escribe algo..." />
+    <button onclick="sendMessage()">Enviar</button>
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
